@@ -27,7 +27,7 @@ export const featuresData = [
 export const carouselImageData = [
   {
     id: 1,
-    path: '/companies/amazon.svg',
+    path: '/companies/amazon.png',
     name: 'Amazon',
   },
   {
@@ -62,7 +62,7 @@ export const carouselImageData = [
   },
   {
     id: 8,
-    path: '/companies/dominos.png',
+    path: '/companies/dominos.svg',
     name: 'dominos',
   },
 ];

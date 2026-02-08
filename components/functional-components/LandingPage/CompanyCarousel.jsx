@@ -13,12 +13,6 @@ import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
 
 export function ComapanyCarousel() {
-  const autoplayRef = React.useRef(
-    Autoplay({
-      delay: 2000,
-      stopOnInteraction: false,
-    })
-  );
   return (
     <section className="bg-gray-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
@@ -30,8 +24,14 @@ export function ComapanyCarousel() {
           opts={{
             align: 'start',
             loop: true,
+            duration: 20,
           }}
-          plugins={[autoplayRef.current]}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+            }),
+          ]}
           className="mt-16 w-full"
         >
           <CarouselContent className="-ml-4">
