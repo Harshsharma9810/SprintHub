@@ -30,9 +30,10 @@ export default function RootLayout({ children }) {
         },
       }}
     >
-      <html lang="en">
-        <body className={`${inter.className}`}>
-          <ThemeProvider attribute="class" defaultTheme="dark">
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${inter.className} land-background`}>
+          {/* <ThemeProvider attribute="class" defaultTheme="dark"> */}
+          <ThemeProvider attribute="class" defaultTheme="light">
             <Header />
             <main className="min-h-screen">{children}</main>
             <footer className="bg-gray-900 py-12">
