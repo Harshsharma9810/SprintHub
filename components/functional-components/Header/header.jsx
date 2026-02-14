@@ -2,13 +2,16 @@
 
 import { Button } from '@/components/ui/button';
 import UserMenu from '@/components/ui/user-menu';
+// import { checkUser } from '@/lib/checkUser';
 import { SignedIn, SignedOut, SignInButton } from '@clerk/nextjs';
 import { PenBox } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import UserLoading from '../user-loading';
 
 const Header = () => {
+  // await checkUser();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -62,6 +65,7 @@ const Header = () => {
           </SignedIn>
         </div>
       </nav>
+      <UserLoading />
     </header>
   );
 };

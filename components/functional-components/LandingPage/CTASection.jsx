@@ -18,17 +18,19 @@ const CTASection = () => {
 
       <Link
         href="/onboarding"
-    //     className="inline-flex items-center justify-center mt-10 rounded-lg
-    //   bg-white px-10 py-4 text-indigo-600 font-semibold
-    //   hover:bg-gray-100 transition-colors shadow-lg"
-    //   >
-    >
-        <Button size='lg' className="animate-bounce inline-flex items-center justify-center mt-10 rounded-lg
+        //     className="inline-flex items-center justify-center mt-10 rounded-lg
+        //   bg-white px-10 py-4 text-indigo-600 font-semibold
+        //   hover:bg-gray-100 transition-colors shadow-lg"
+        //   >
+      >
+        <Button
+          size="lg"
+          className="animate-bounce inline-flex items-center justify-center mt-10 rounded-lg
       bg-white px-10 py-6 text-indigo-600 font-semibold
-      hover:bg-gray-100 transition-colors shadow-lg">
-
-        Get Started for Free
-        <ArrowRightIcon className="ml-2 h-5 w-5" />
+      hover:bg-gray-100 transition-colors shadow-lg"
+        >
+          Get Started for Free
+          <ArrowRightIcon className="ml-2 h-5 w-5" />
         </Button>
       </Link>
 
